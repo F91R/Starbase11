@@ -6,9 +6,9 @@
 // @author       SLY w/ Contributions by niofox, SkyLove512, anthonyra, [AEP] Valkynen
 // @match        https://*.based.staratlas.com/
 // @require      https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/anchor-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/buffer-browserified.js
-// @require      https://raw.githubusercontent.com/ImGroovin/SAGE-Lab-Assistant/main/bs58-browserified.js
+// @require      https://raw.githubusercontent.com/F91R/Starbase11/main/anchor-browserified.js
+// @require      https://raw.githubusercontent.com/F91R/Starbase11/main/buffer-browserified.js
+// @require      https://raw.githubusercontent.com/F91R/Starbase11/main/bs58-browserified.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -4477,7 +4477,7 @@
 		updateFleetState(fleet, 'Refueling');
         let fuelResp = {status: 0, detail: '', amount: 0};
 
-		const fuelData = await getFleetFuelData(fleet, currentPos, targetPos);
+		const fuelData = await getFleetFuelData(fleet, currentPos, targetPos, roundTrip);
 
         /*
 		//Calculate fuel needed
